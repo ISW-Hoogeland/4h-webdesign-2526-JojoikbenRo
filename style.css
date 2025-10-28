@@ -85,3 +85,15 @@ main {
 footer {
   grid-area: footer;
 }
+body {
+  color: var(--text-dark);
+  background: var(--bg-light);
+  min-height: 100svh;
+  font-family: var(--font-main);
+}
+header {
+   color: var(--text-dark);
+  background: var(--bg-light);
+  min-height: 100svh;
+  font-family: var(--font-main);
+}

@@ -29,11 +29,12 @@
 body {
   display: grid;
   grid-template-areas: 
-  "header nav"
-  "main main"
-  "footer footer";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100px 1fr 25px;
+  "header"
+  "nav"
+  "main"
+  "footer";
+  grid-template-columns:1fr;
+  grid-template-rows: 100px 100px 1fr 25px;
 }
 header {
   grid-area: header;
@@ -53,6 +54,8 @@ body {
   min-height: 100svh;
   font-family: var(--font-main);
 }
+p { margin-bottom: 15px;
+ }
 header {
     background-color: var(--h1-bg);
     color: var(--h1-text);
@@ -73,7 +76,7 @@ nav {
 footer {
    color: var(--text-dark);
   background: var(--bg-light);
-  max-height: 1000svh;
+  min-height: 100svh;
   font-family: var(--font-main);
 }
 body {
@@ -92,12 +95,14 @@ nav a {
   color: var(--h1-text);
 }
 
+
+
 h2 {
     color: var(--h2-text);
     font-size: 1.6rem;
     border-bottom: 2px solid var(--h2-border);
     padding-bottom: 5px;
-    margin: 10px 50px 20px 50px;
+    margin-top: 40px;
 }
 h1 {
     color: var(--h1-text);

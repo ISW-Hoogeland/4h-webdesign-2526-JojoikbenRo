@@ -1,16 +1,16 @@
 :root {
-    --bg-light: #f9fffb;
-    --text-dark: #2c3e50;
+    --bg-light: #ffffff;
+    --text-dark: #000000;
     --font-main: 'Segoe UI', sans-serif;
 
-    --h1-bg: #C1ECAF;
-    --h1-text: #1e2d2b;
-    --h2-text: #74A9CB;
+    --h1-bg: #708965;
+    --h1-text: #444444;
+    --h2-text: #80b67b;
     --h2-border: var(--h1-bg);
     --h3-text: #D67160;
 
     --list-bg: #e8f8f0;
-    --list-border: #A1D69A;
+    --list-border: #000000;
     --strong-text: var(--h3-text);
     --code-bg: #f0f0f0;
 
@@ -34,7 +34,7 @@ body {
   "main"
   "footer";
   grid-template-columns:1fr;
-  grid-template-rows: 100px 100px 1fr 25px;
+  grid-template-rows: 100px 100px 1fr;
 }
 header {
   grid-area: header;
@@ -48,13 +48,8 @@ main {
 footer {
   grid-area: footer;
 }
-body {
-  color: var(--text-dark);
-  background: var(--bg-light);
-  min-height: 100svh;
-  font-family: var(--font-main);
-}
-p { margin-bottom: 15px;
+
+p { margin: 10px 50px 20px 50px;
  }
 header {
     background-color: var(--h1-bg);
@@ -63,6 +58,12 @@ header {
     border-radius: 12px;
     text-align: center;
     margin-bottom: 5px;
+}
+body {
+  color: var(--text-dark);
+  background: var(--bg-light);
+  min-height: 100svh;
+  font-family: var(--font-main);
 }
 nav {
     background: var(--nav-bg);
@@ -75,16 +76,10 @@ nav {
 
 footer {
    color: var(--text-dark);
-  background: var(--bg-light);
-  min-height: 100svh;
+  background: #708965;
   font-family: var(--font-main);
 }
-body {
-  color: var(--text-dark);
-  background: var(--bg-light);
-  min-height: 100svh;
-  font-family: var(--font-main);
-}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -102,7 +97,7 @@ h2 {
     font-size: 1.6rem;
     border-bottom: 2px solid var(--h2-border);
     padding-bottom: 5px;
-    margin-top: 40px;
+    margin: 10px 50px 20px 50px;
 }
 h1 {
     color: var(--h1-text);

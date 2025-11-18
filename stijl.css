@@ -105,3 +105,9 @@ h1 {
     font-size: 2.2rem; 
     margin-left: 10px;
 }
+h3 {
+  color: var(--h1-text);
+    font-size: 2.2rem; 
+    margin-left: 10px;
+
+}
